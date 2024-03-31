@@ -1,0 +1,33 @@
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{cleveref}
+\usepackage{caption}
+\usepackage{graphicx}
+
+
+
+\newcommand*{\textimg}[3]{
+    \begin{minipage}{0.5\textwidth}
+        #1
+    \end{minipage}
+    \begin{minipage}{0.08\textwidth}
+    \end{minipage}
+    \begin{minipage}{0.4\textwidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{#2}
+        \caption{#3}
+    \end{figure}
+    \end{minipage}\\
+}
+
+\newcommand*{\ex}[1]{\begin{block}{Пример} #1 \end{block}}
+
+% Madrid is the cool one though. Or CambrigeUS. Boxes is the cleanest.
+\usetheme{boxes}
+% structure is a black and white one (cool with Madrid)
+\usecolortheme{seagull}
+\setbeamertemplate{navigation symbols}{}
